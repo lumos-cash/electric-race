@@ -63,3 +63,9 @@ html{scroll-padding-top:0}.bubble-one{width:11.76px;height:11.76px}.bubble-two{w
 #cover .year-route span,#cover .year-route span::before,#cover .year-route span::after{background:#111!important}
 #cover .round-arrow,#ending .round-arrow{border-color:#111!important;color:#111!important}
 #cover .hero-photo,#ending .ending-photo{object-position:center center}
+
+/* Soft dissolve at the cover-to-chapter boundary. */
+#cover::before{display:none}
+#cover .hero-photo{-webkit-mask-image:none;mask-image:none}
+#cover::after{content:"";position:absolute;z-index:2;inset:auto 0 -1px;height:clamp(120px,18vh,190px);pointer-events:none;background:linear-gradient(to bottom,rgba(244,240,229,0),rgba(244,240,229,.56) 58%,#f4f0e5 100%);-webkit-backdrop-filter:blur(9px);backdrop-filter:blur(9px);mask-image:linear-gradient(to bottom,transparent 0%,#000 48%,#000 100%);-webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 48%,#000 100%)}
+@media(max-width:520px){#cover::after{height:130px}}
