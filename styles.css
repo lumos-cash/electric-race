@@ -56,3 +56,10 @@ html{scroll-padding-top:0}.bubble-one{width:11.76px;height:11.76px}.bubble-two{w
 .study-inner{min-width:800px}.study-panel-head span:last-child{width:27%}.adoption-study{scroll-margin-top:95px}
 .bubble-key{position:relative;display:block;width:150px;height:158px;margin:0;transform:none}.bubble-key span{position:absolute;bottom:0;left:50%;transform:translateX(-50%);border-color:#8c9fb8;background:#dbe6f533}.bubble-one{z-index:3}.bubble-two{z-index:2}.bubble-three{z-index:1}
 @media(max-width:560px){.bubble-key{width:96px;height:104px}.bubble-one{width:14.47px;height:14.47px}.bubble-two{width:45.77px;height:45.77px}.bubble-three{width:96px;height:96px}}
+
+/* Approved real-photo cover and conclusion, 2026-10-14. */
+#cover :is(h1,p,b,small,span,a),
+#ending :is(h2,h3,p,span,a){color:#111!important;text-shadow:none!important}
+#cover .year-route span,#cover .year-route span::before,#cover .year-route span::after{background:#111!important}
+#cover .round-arrow,#ending .round-arrow{border-color:#111!important;color:#111!important}
+#cover .hero-photo,#ending .ending-photo{object-position:center center}
